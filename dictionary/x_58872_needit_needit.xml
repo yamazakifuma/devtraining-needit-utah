@@ -2,6 +2,7 @@
     <element audit="true" db_object_id="8e54252dc32b8a103e0abd73e40131cc" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
         <element label="New field 1" max_length="40" name="new_field_1" type="string"/>
         <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
@@ -24,6 +25,7 @@
             </choice>
         </element>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_1" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
     </element>
 </database>
